@@ -25,7 +25,7 @@ import Foundation
 @dynamicMemberLookup
 public struct UnstructuredResource: KubernetesAPIResource {
 
-	private var properties = [String: Any]()
+	public var properties = [String: Any]()
 
 	public init(properties: Dictionary<String, Any>) {
 		self.properties = properties
