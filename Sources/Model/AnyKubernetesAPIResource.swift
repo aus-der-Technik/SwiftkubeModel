@@ -32,7 +32,7 @@ public struct AnyKubernetesAPIResource: KubernetesAPIResource {
 	}
 
 	/// The concrete wrapped resource instance.
-	private let resource: KubernetesAPIResource
+	public let resource: KubernetesAPIResource
 
 	/// This resource's `apiVersion`.
 	public var apiVersion: String
